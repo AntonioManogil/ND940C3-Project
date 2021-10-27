@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <Transition
+        app:constraintSetStart="@+id/start"
+        app:constraintSetEnd="@+id/end"
+        app:duration="3000"
+        app:autoTransition="animateToEnd" />
+
+    <ConstraintSet
+        android:id="@+id/start">
+        <Constraint
+            android:id="@+id/labelFilename"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/content_detail_normal_margin"
+            android:layout_marginTop="@dimen/content_detail_normal_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Constraint
+            android:id="@+id/textFilename"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/labelFilename"
+            app:layout_constraintTop_toTopOf="@id/labelFilename"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <Constraint
+            android:id="@+id/labelStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/content_detail_large_margin"
+            app:layout_constraintEnd_toEndOf="@id/labelFilename"
+            app:layout_constraintStart_toStartOf="@id/labelFilename"
+            app:layout_constraintTop_toBottomOf="@id/labelFilename" />
+
+        <Constraint
+            android:id="@+id/textStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/content_detail_normal_margin"
+            android:layout_marginEnd="@dimen/content_detail_normal_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/labelStatus"
+            app:layout_constraintTop_toTopOf="@id/labelStatus"
+            android:alpha="0.0" />
+
+        <Constraint
+            android:id="@+id/backButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/content_detail_normal_margin"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="@dimen/content_detail_normal_margin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </ConstraintSet>
+
+    <ConstraintSet
+        android:id="@+id/end">
+        <Constraint
+            android:id="@+id/labelFilename"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/content_detail_normal_margin"
+            android:layout_marginTop="@dimen/content_detail_normal_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/textFilename"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/labelFilename"
+            app:layout_constraintTop_toTopOf="@id/labelFilename"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <Constraint
+            android:id="@+id/labelStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/content_detail_large_margin"
+            app:layout_constraintEnd_toEndOf="@id/labelFilename"
+            app:layout_constraintStart_toStartOf="@id/labelFilename"
+            app:layout_constraintTop_toBottomOf="@id/labelFilename" />
+
+        <Constraint
+            android:id="@+id/textStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/content_detail_normal_margin"
+            android:layout_marginEnd="@dimen/content_detail_normal_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/labelStatus"
+            app:layout_constraintTop_toTopOf="@id/labelStatus"
+            android:alpha="1.0" />
+
+        <Constraint
+            android:id="@+id/backButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/content_detail_normal_margin"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="@dimen/content_detail_normal_margin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </ConstraintSet>
+</MotionScene>
